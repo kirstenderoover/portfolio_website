@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: #f7bd9b;
+    background-color: #67c2b5;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -27,7 +27,7 @@ header ul {
     width: 100%;
 }
 header ul li a {
-   color: black;
+   color: #1b1464;
    text-decoration: none;
 }
 section{
@@ -35,15 +35,67 @@ section{
     margin: 2vh auto;
 }
 #hero {
-    height: 80vh;
-    width: 40vw;
-    background-image: url(../Images/walvis.jpg);
-    background-size: cover;
-    background-position: center;
+    height: 75vh;
+    width: auto;
     border-radius: 50px;
     padding: 8%;
     padding-right: 15%;
     padding-top: 5vh;
+    margin-bottom: 15vh;
+}
+#package_hero {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem; 
+}
+.hero-item {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    grid-column: 1 / span 1;
+    margin-bottom: 8rem;
+    border-radius: 3rem;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.hero-item img {
+    width: 40%;
+    height: 100%;
+    align-self: center;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    
+    object-fit: cover;
+}
+.content  {
+    grid-column: 2 / span 1;
+    margin: 3vh;
+    text-align: left;
+    background-color: #ffffff; 
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    flex: 1; 
+    border-radius: 0 3rem 3rem 0; 
+}
+.content p {
+    margin-bottom: 3vh;
+}
+.content a {
+    border: 2px solid #1b1464; 
+    border-radius: 3rem;
+    display: inline-block;
+    padding: 2%;
+    text-decoration: none;
+    color: #1b1464;
+    margin-bottom: 2rem;
+    max-width: fit-content;
 }
 p {
     font-size: 1.2rem;
@@ -60,7 +112,7 @@ h1{
     font-weight: 800;
     margin-bottom: 10vh;
     font-family: 'Pacifico', cursive;
-    color: #3e7e77;
+    color: #f5c24b;
 }
 footer {
     background-color: white;
@@ -98,4 +150,9 @@ footer ul a {
         width: 30%;
     }
 }
+
+
+
+
+
 
